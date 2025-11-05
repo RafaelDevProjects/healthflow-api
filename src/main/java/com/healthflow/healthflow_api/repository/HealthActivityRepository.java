@@ -31,3 +31,4 @@ public interface HealthActivityRepository extends JpaRepository<HealthActivity, 
     List<Object[]> findStatisticsByUser(@Param("userId") Long userId,
                                         @Param("startDate") LocalDate startDate);
 }
+
