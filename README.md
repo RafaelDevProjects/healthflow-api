@@ -65,25 +65,80 @@ Ao iniciar o projeto, ela pode ser acessada via navegador no endereço padrão:
 
 Nela, é possível visualizar todos os endpoints disponíveis, testar requisições e ver os modelos de entrada e saída.
 
----
-
-## 🌐 Endpoints Principais
-
-A aplicação fornece endpoints RESTful para os seguintes recursos:
-
-- **Usuário**: gerenciamento de contas e informações pessoais  
-- **Atividade de Saúde**: criação e monitoramento de registros de atividades associadas a usuários  
-
-Cada endpoint segue convenções REST, utilizando métodos HTTP adequados (GET, POST, PUT, DELETE).
 
 ---
 
-## 🧩 Configuração do Ambiente
 
-O arquivo `application.properties` contém as configurações básicas do projeto, incluindo porta da aplicação, banco de dados e integração com o Swagger.  
-O projeto pode ser executado localmente com o Maven, utilizando os comandos padrões de build e execução, e pode ser facilmente implantado em servidores ou containers.
+## 🚀 Como Rodar o Projeto
+
+### 🧩 1. Pré-requisitos
+
+Certifique-se de ter instalado:
+
+- **Java JDK 17+**
+- **Maven 3.8+**
+
+Verifique as versões:
+```bash
+java -version
+mvn -version
+```
+
+### 📦 2. Clonar o Repositório
+
+Clone o projeto ou baixe o código-fonte:
+```bash
+git clone https://github.com/seu-usuario/healthflow-api.git](https://github.com/RafaelDevProjects/healthflow-api
+cd healthflow-api
+```
+
+### ⚙️ 3. Instalar Dependências
+
+Execute o comando abaixo para baixar e compilar as dependências:
+
+```bash
+mvn clean install
+```
+
+### ▶️ 4. Executar a Aplicação
+
+Rode a aplicação com o Maven:
+
+```bash
+mvn spring-boot:run
+```
+
+### 🌍 5. Acessar a API
+
+Após iniciar, a API estará disponível em:
+
+URL base:
+
+```bash
+http://localhost:8080
+```
+
 
 ---
+
+## 📘 Testando com Swagger e documentação
+
+A API possui configuração integrada de **Swagger/OpenAPI**.  
+Após iniciar a aplicação, acesse pelo navegador:
+
+Interface interativa (Swagger UI):
+👉 http://localhost:8080/swagger-ui/index.html
+
+Especificação OpenAPI (JSON):
+👉 http://localhost:8080/v3/api-docs
+
+Especificação OpenAPI (YAML):
+👉 http://localhost:8080/v3/api-docs.yaml
+
+Lá é possível visualizar e testar todos os endpoints interativamente.
+
+---
+
 
 # 🌐 Endpoints da HealthFlow API
 
@@ -221,33 +276,6 @@ Remove uma atividade registrada.
 
 ---
 
-## 📘 Testando com Swagger e documentação
-
-A API possui configuração integrada de **Swagger/OpenAPI**.  
-Após iniciar a aplicação, acesse pelo navegador:
-
-Interface interativa (Swagger UI):
-👉 http://localhost:8080/swagger-ui/index.html
-
-Especificação OpenAPI (JSON):
-👉 http://localhost:8080/v3/api-docs
-
-Especificação OpenAPI (YAML):
-👉 http://localhost:8080/v3/api-docs.yaml
-
-Lá é possível visualizar e testar todos os endpoints interativamente.
-
----
-
-## 🚀 Possíveis Extensões Futuras
-
-- Autenticação e autorização com **Spring Security**  
-- Integração com **serviços de monitoramento de saúde** externos (ex: Google Fit, Apple Health)  
-- Suporte a **notificações** e **relatórios de desempenho**  
-- Implementação de **validações avançadas** para os dados de entrada  
-
----
-
 ## 🔁 Códigos de Resposta
 
 | Código | Significado |
@@ -258,3 +286,11 @@ Lá é possível visualizar e testar todos os endpoints interativamente.
 | 404 | Recurso não encontrado |
 | 500 | Erro interno no servidor |
 
+## 👥 Participantes do Grupo
+
+| Nome Completo | RM |
+|:--------------|:--------------------------|
+| Rafael de Almeida Sigoli| RM554019 | 
+| Giovanna Franco Gaudino Rodrigues | rm553701 |
+| Rafael Jorge Del Padre | rm552765 |
+| Lucas Bertolassi Iori | rm553183 |
